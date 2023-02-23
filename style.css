@@ -1,0 +1,81 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header,section {
+  margin-bottom: 40px;
+}
+
+h2{
+  margin-bottom: 30px;
+}
+
+.grid-3-cols{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* HEADER */
+
+header{
+  display: grid;
+  grid-template-columns: (2,1fr);
+  column-gap: 80px;
+  margin-top: 48px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.header-text {
+  margin-bottom: 24px;
+}
+
+.header-navigation-list{
+  list-style-type: none;
+  height: 80px;
+  width: 663px;
+  margin: auto;
+}
+
+li {
+  float: left;
+}
+
+ul a{
+padding-right: 32px;
+padding-left: 32px;
+/* display: block; */
+line-height: 80px;
+text-decoration: none;
+font-size: 21px;
+}
+
+img {
+  width: 100%;
+}
