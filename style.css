@@ -195,3 +195,24 @@ h3 {
 .price{
   margin-bottom: 40px;
 }
+
+/* CONTACT */
+
+.contact-list{
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.contact-list li{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+
+.reservation-form{
+  display:flex;
+  flex-direction: column;
+  gap: 12px;
+}
