@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
 }
 
@@ -36,16 +36,27 @@ h2{
 .grid-3-cols{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
+
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
 
 
 /* HEADER */
 
 header{
-  display: grid;
-  grid-template-columns: (2,1fr);
-  column-gap: 80px;
-  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+nav{
+  
 }
 
 h1 {
@@ -58,24 +69,104 @@ h1 {
 
 .header-navigation-list{
   list-style-type: none;
-  height: 80px;
-  width: 663px;
+  height: 50px;
   margin: auto;
 }
 
-li {
+.header__navigation-item {
   float: left;
+  width: 265px;
 }
 
 ul a{
 padding-right: 32px;
 padding-left: 32px;
-/* display: block; */
-line-height: 80px;
+display: flex;
 text-decoration: none;
 font-size: 21px;
+justify-content: center;
+color: black;
 }
 
 img {
   width: 100%;
 }
+
+/* ------------------------ */
+/* about */
+/* ------------------------ */
+
+.garage-img{
+  grid-column: 1/3;
+}
+
+.about-box{
+  align-self: center;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* ------------------------ */
+/* cars */
+/* ------------------------ */
+
+h3 {
+  margin-bottom: 24px;
+}
+
+.car-details{
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.car-details li{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.car-details li:last-child {
+  margin-bottom: 0;
+}
+
+.car-img-audi{
+  grid-column: 2/ -1;
+  margin-bottom: 50px;
+}
+
+.car-box-audi{
+  grid-row: 1;
+  align-self: center;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.car-img-bmw{
+  grid-column: 1/ 3;
+  margin-bottom: 50px;
+  grid-row: 1;
+}
+
+.car-box-bmw{
+  grid-row: 1;
+  align-self: center;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.car-img-mercedes{
+  grid-column: 2/ -1;
+  margin-bottom: 50px;
+}
+
+.car-box-mercedes{
+  grid-row: 1;
+  align-self: center;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
