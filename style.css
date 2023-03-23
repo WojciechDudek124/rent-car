@@ -34,6 +34,46 @@ body{
   padding: 0 3.2rem;
 }
 
+.grid{
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols{
+  grid-template-columns: repeat(2,1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary{
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary{
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary{
+  font-size: 5.2rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary{
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -51,7 +91,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
 }
 
 .header{
@@ -81,7 +121,7 @@ body{
   padding-left: 32px;
   display: flex;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 2.2rem;
   justify-content: center;
   color: #e67e22;
 } 
@@ -199,4 +239,43 @@ body{
   font-size: 5.2rem;
   color:#e67e22;
   margin-bottom: 2.4rem;
+}
+
+/* ----------------- */
+/* ABOUT SECTION */
+/* ----------------- */
+
+.about{
+  padding: 4.8rem 0 9.6rem 0;
+}
+.subheading{
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.step-number{
+  font-size: 8.6rem;
+  font-weight: 600;
+  color:#ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-box-img{
+  display: flex;
+  justify-content: center;
+}
+
+.step-img{
+  width: 50%;
+  border-radius: 18px;
+}
+
+.step-description{
+  font-size: 1.8rem;
+  line-height: 1.8
 }
