@@ -6,220 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent-cars</title>
   <link href="style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class="container">
-    <header>
-      <!-- <div class="header-text-box">
-        <h1>Dołącz do Dudek-Rent-Cars i skorzystaj z naszej oferty!</h1>
-        <p class="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id ullam sunt omnis vitae beatae quam dolore temporibus delectus sapiente. Quam aliquid tempore dolores ratione saepe veniam voluptatibus expedita aperiam?</p>
-      </div> -->
-      <nav>
-        <ul class="header-navigation-list">
-          <li class="header__navigation-item">
-            <a href="#about">O nas</a>
+
+
+  <div class="background-img">
+    <header class="header">
+        <a href="#">
+          <ion-icon class="header-logo" name="car-sport-outline">
+          </ion-icon>
+        </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#about">O nas</a>
           </li>
-          <li class="header__navigation-item">
-            <a href="#cars">Samochody</a>
+          <li>
+            <a class="main-nav-link" href="#cars">Samochody</a>
           </li>
-          <li class="header__navigation-item">
-            <a href="#price">Cennik</a>
+          <li>
+            <a class="main-nav-link" href="#price">Cennik</a>
           </li>
-          <li class="header__navigation-item">
-            <a href="#contact">Kontakt</a>
+          <li>
+            <a class="main-nav-link" href="#contact">Kontakt</a>
+          </li>
+          <li>
+            <ion-icon class="header-logo" name="call-outline"></ion-icon>
           </li>
         </ul>
       </nav>
-      <div class="header-text-box">
-        <h1>Dołącz do Dudek-Rent-Cars i skorzystaj z naszej oferty!</h1>
-        <p class="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id ullam sunt omnis vitae beatae quam dolore temporibus delectus sapiente. Quam aliquid tempore dolores ratione saepe veniam voluptatibus expedita aperiam?</p>
-      </div>
     </header>
 
-    <section>
-    <div class="about" id="about">
-    <h2>O nas</h2>
-      <div class="grid-3-cols">
-        <img class="garage-img" src="garage.jpg" alt="Garaż">
-        <div class="about-box">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam distinctio quas modi doloribus dolorem accusantium pariatur fugit adipisci, doloremque necessitatibus! A eos maxime eligendi aperiam consectetur quisquam ipsa consequuntur tempora?
-          </p>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box shadow">
+          <h1 class="first-title">Dołącz do Rent Cars i skorzystaj z naszej oferty!</h1>
+          <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing. Eaque id ullam omnis vitae beatae quam dolore temporibus delectus. </p>
+          <a href="#cta" class="btn btn--outline margin-right-sm">Zacznij od teraz!</a>
+          <a href="#how-it-works" class="btn btn--outline">O nas &darr;</a>
         </div>
-      </div>
-    </div>
-    </section>
 
-    <section>
-      <div class="cars" id="cars">
-      <h2>Nasze samochody</h2>
-
-          <div class="grid-3-cols">
-            <img class="car-img-audi" src="audi.jpg" alt="Audi-A6">
-              <div class="car-box-audi">
-                <h3>Audi A6C8</h3>
-                <ul class="car-details">
-                  <li>
-                    <span>Silnik: 2.0 TFSI e 299KM</span>
-                  </li>
-                  <li>
-                    <span>Moc: 299KM</span>
-                  </li>
-                  <li>
-                    <span>Napęd: quattro</span>
-                  </li>
-                  <li>
-                    <span>Spalanie: 11.L/miasto - 8.L/trasa</span>
-                  </li>
-                </ul>
+        <div class="form-box shadow">
+          <h2 class="secondery-title">Sprawdź dostępność aut</h2>
+          <form class="hero-form">
+          <label for="date">Podaj date</label>
+            <div class="date-box"> 
+              <div>
+                <label for="select-where">Od</label>
+                <input type="date" id="date" name="trip-start">
               </div>
-          </div>
-          
-          <div class="grid-3-cols">
-            <img class="car-img-bmw" src="bmw.jpg" alt="BMW-Series-5">
-            <div class="car-box-bmw">
-              <h3>BMW 5 G30</h3>
-              <ul class="car-details">
-                <li>
-                  <span>Silnik: 2.0 TFSI e 299KM</span>
-                </li>
-                <li>
-                  <span>Moc: 299KM</span>
-                </li>
-                <li>
-                  <span>Napęd: XDrive</span>
-                </li>
-                <li>
-                  <span>Spalanie: 11.L/miasto - 8.L/trasa</span>
-                </li>
-              </ul>
+              <div>
+                <label for="select-where">Do</label>
+                <input type="date" id="date" name="trip-end">
+              </div>
             </div>
-          </div>
 
-          <div class="grid-3-cols">
-            <img class="car-img-mercedes" src="mercedes.jpg" alt="Mercedes E63AMG">
-            <div class="car-box-mercedes">
-              <h3>Mercedes E63 AMG</h3>
-              <ul class="car-details">
-                <li>
-                  <span>Silnik: 2.0 TFSI e 299KM</span>
-                </li>
-                <li>
-                  <span>Moc: 299KM</span>
-                </li>
-                <li>
-                  <span>Napęd: 4Matic</span>
-                </li>
-                <li>
-                  <span>Spalanie: 11.L/miasto - 8.L/trasa</span>
-                </li>
-              </ul>
+            <div class="car-box">
+              <label for="choose-car">Wybierz auto</label>
+                <select id="car-model" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="car">Audi A4B9</option>
+                  <option value="car">Mercedes C63AMG</option>
+                  <option value="car">BMW SERIES 5</option>
+                  <option value="car">AUDI A6C8</option>
+                  <option value="car">MORCEDES GLE</option>
+                </select>
             </div>
-          </div>
-
+          </form>
+          <a href="#" class="btn btn--outline">Sprawdz!</a>
         </div>
+      </div>  
     </section>
+  </div>
 
-    <!-- <section>
-      <div class="price" id="price">
-          <h2>Dostosuj cenę do swoich potrzeb!</h2>
-          <div class="wrapper">
-          <table class="pricelist_table">
-            <tr class="pricelist-car-audi">Audi A6C8</tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Doba</td>
-              <td>od 2000 zł.</td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Pakiet-30dni</td>
-              <td>od 18000 zł.</td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Wynajem długoterminowy</td>
-              <td>od 500zł/doba</td>
-            </tr>
-          </table>
-  
-          <table class="pricelist_table">
-            <tr class="pricelist__car">
-              <td>BMW 5 G30</td>
-              <td></td>
-            </tr>
-            <tr class="pricelist__car">
-              <td></td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Doba</td>
-              <td>od 2300 zł.</td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Pakiet-30dni</td>
-              <td>od 19500 zł.</td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Wynajem długoterminowy</td>
-              <td>od 600zł/doba</td>
-            </tr>
-          </table>
-  
-          <table class="pricelist_table">
-            <tr class="pricelist__car">Mercedes E63AMG</tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Doba</td>
-              <td>od 4000 zł.</td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Pakiet-30dni</td>
-              <td>od 25000 zł.</td>
-            </tr>
-            <tr class="pricelist__item">
-              <td class="pricelist__name">Wynajem długoterminowy</td>
-              <td>od 900zł/doba</td>
-            </tr>
-          </table>
-        </div>
-  
-      </div>
-      </section> -->
-
-      <div class="price" id="price">
-        <h2>Dostosuj cenę do swoich potrzeb!</h2>
-        <div class="tabelka">
-          <table class="table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Audi A6C8 </th>
-                <th>BMW 5 G30</th>
-                <th>MERCEDES E63AMG</th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <th>Doba</th>
-              <td>1000zł</td>
-              <td>1500zł</td>
-              <td>3000zł</td>
-            </tr>
-            <tr>
-              <th>Pakiet 30-dni</th>
-              <td>12000zł</td>
-              <td>15000zł</td>
-              <td>25000zł</td>
-            </tr>
-            <tr>
-              <th>Wynajem długoterminowy</th>
-              <td>od 900zł doba</td>
-              <td>od 1200zł doba</td>
-              <td>od 2000zł doba</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, atque. Labore assumenda velit ipsum tempora pariatur mollitia sequi, totam reprehenderit impedit eveniet alias, obcaecati dolores beatae facere numquam, iusto minima.</p>
+  <section class="about">
+    <div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus omnis veritatis minus error natus nemo fugiat! Doloremque quis modi amet necessitatibus natus, delectus, earum harum officia incidunt ipsa est ipsam.</p>
     </div>
+  </section>
 
-      <section>
+
+
+
+      <!-- <section>
         <div class="contact" id="contact">
           <div class="grid-3-cols">
             <div class="reservation-container">
@@ -261,9 +133,9 @@
 
       </div>
     </div>
-    </section>
+    </section> -->
 
-
-  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
