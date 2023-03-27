@@ -180,6 +180,10 @@ body{
   padding: 7.2rem;
 }
 
+.hero-text-box:hover{
+  transform: translateY(-1.2rem);
+}
+
 .hero-text{
   font-size: 3.2rem;
   line-height: 1.6;
@@ -234,6 +238,10 @@ body{
   padding: 7.2rem;
 }
 
+.form-box:hover{
+  transform: translateY(-1.2rem);
+}
+
 .car-box{
   margin-top: 2.4rem;
 }
@@ -282,7 +290,7 @@ body{
   letter-spacing: 0.75px;
 }
 
-.step-description{
+.step-description, .top-section-description{
   font-size: 1.8rem;
   line-height: 1.8;
 }
@@ -293,9 +301,28 @@ body{
   margin-bottom: 3.2rem;
 }
 
-.top-section-about{
+.location-heading{
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 5.2rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+
+.top-section-description{
+  margin-bottom: 2.4rem;
+}
+
+iframe{
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
+.bot-section-about{
   text-align: center;
   margin: 0 auto;
+  padding-top: 3.2rem;
 }
 
 .timeline{
