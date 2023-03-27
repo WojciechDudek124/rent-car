@@ -395,3 +395,85 @@ iframe{
   transform: none;
   opacity: 1;
 }
+
+/* ------------------------ */
+/* CAR SECTION */
+/* ------------------------ */
+
+.section-car{
+  padding: 0 0 9.6rem 0;
+}
+
+.car{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content{
+  margin: 0 4rem;
+  box-shadow:  0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+
+.card{
+  border-radius: 11px;
+  background-color: #F5F5F5;
+  width: 50rem;
+  padding: 3.2rem 0 3.2rem 0;
+}
+
+.card-img{
+  width: 100%;
+  border-radius: 11px;
+}
+
+.car-name{
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 1.2rem;
+}
+
+.car-specifications{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.car-specification{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: 1.2rem;
+}
+
+.car-specification:last-child{
+  margin-bottom: 2.4rem;
+}
+
+.car-icon{
+  height: 3rem;
+  width: 3rem;
+  color: #1DAC00;
+}
+
+.all-cars-img{
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.link:visited, .link:link{
+  color: #333;
+  border-bottom: 1px solid transparent;
+}
+
+.link:hover, .link:active{
+  color: #1DAC00;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
