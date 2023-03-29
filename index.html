@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent-cars</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="/js/swiper-bundle.min.js">
 
 </head>
 <body>
@@ -188,22 +189,23 @@
     </div>
   </section>
 
-  <section class="section-car container">
-    <span class="subheading">Samochody</span>
-    <p class="top-section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cupiditate cum pariatur. Blanditiis ipsa perferendis molestias distinctio aliquid. Corporis porro repudiandae autem commodi soluta sunt hic nemo quaerat. Facere, impedit!</p>
-    <div class="car">
-    <div class="slide">
-      <div class="slide-content">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="card-image-content">
-              <span class="overlay"></span>
-              <div class="card-image"> 
-                <img src="cars/rs5.jpeg" alt="audiS5" class="card-img">
-              </div>
-            </div>
 
-            <div class="card-content">
+      <!-- <span class="subheading">Samochody</span>
+    <p class="top-section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cupiditate cum pariatur. Blanditiis ipsa perferendis molestias distinctio aliquid. Corporis porro repudiandae autem commodi soluta sunt hic nemo quaerat. Facere, impedit!
+    </p> -->
+
+    <section class="section-car container">
+      <span class="subheading">Samochody</span>
+      <p class="top-section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cupiditate cum pariatur. Blanditiis ipsa perferendis molestias distinctio aliquid. Corporis porro repudiandae autem commodi soluta sunt hic nemo quaerat. Facere, impedit!
+      </p>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="car">
+            <img  class="car-img" src="cars/rs5.jpeg">
+            <div class="car-content">
               <h2 class="car-name">Audi RS5</h2>
               <ul class="car-specifications">
                 <li class="car-specification">
@@ -216,6 +218,10 @@
                 </li>
                 <li class="car-specification">
                   <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>Rodzaj paliwa:</span>
+                </li>
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
                   <span>Moc:</span>
                 </li>
                 <li class="car-specification">
@@ -224,21 +230,68 @@
                 </li>
                 <li class="car-specification">
                   <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
-                  <span>Rodzaj paliwa:</span>
+                  <span>Kolor:</span>
                 </li>
               </ul>
             </div>
-            
             <div class="all-cars-img">
-              <a href="#" class="link">Sprawdz wszystkie zdjęcia &rarr;</a>
+              <a href="#" class="link">Sprawdz &rarr;</a>
             </div>
           </div>
-
         </div>
-      </div>  
-    </div>
-  </div>
-  </section>
+    
+        <div class="swiper-slide">
+          <div class="car">
+            <img  class="car-img" src="cars/rs5.jpeg">
+            <div class="car-content">
+              <h2 class="car-name">Audi RS5</h2>
+              <ul class="car-specifications">
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>Rok: 2021</span>
+                </li>
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>Silnik:</span>
+                </li>
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>Rodzaj paliwa:</span>
+                </li>
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>Moc:</span>
+                </li>
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>0-100:</span>
+                </li>
+                <li class="car-specification">
+                  <ion-icon class="car-icon" name="checkmark-outline"></ion-icon>
+                  <span>Kolor:</span>
+                </li>
+              </ul>
+            </div>
+            <div class="all-cars-img">
+              <a href="#" class="link">Sprawdz &rarr;</a>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
 
 
 
@@ -287,8 +340,16 @@
     </div>
     </section> -->
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/js/swiper.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
