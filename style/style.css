@@ -514,16 +514,6 @@ iframe{
 .price-head{
   color: #7DA57E;
 }
-.plan{
-  border-radius: 11px;
-  width: 30%;
-  margin-top: 3.2rem;
-}
-
-.plan-basic{
-  padding: 3.2rem;
-  border: 2px solid #fdf2e9;
-}
 
 .plan-header{
   text-align: center;
@@ -551,7 +541,7 @@ iframe{
 
 .plan-text{
   font-size: 1.8rem;
-  color: #DEE2DE;
+  color: #fcfffc85;
 }
 
 .plan-list{
@@ -562,16 +552,76 @@ iframe{
 }
 
 .plan-item{
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #DEE2DE;
+  align-items: center;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.plan-icon-list{
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #7DA57E;
 }
 
 .top-section-description-plan{
   font-size: 1.8rem;
   color: #DEE2DE;
+  margin-bottom: 4.8rem;
 }
 
 .heading-secondaryv2{
   color: #DEE2DE;
   margin-bottom: 4.8rem;
+}
+
+.plan{
+  border-radius: 11px;
+  margin-top: 3.2rem;
+  border: 2px solid #fdf2e9;
+  padding: 3.2rem;
+}
+
+.plan-basic{
+  border: 2px solid #fdf2e9;
+  box-shadow: 0 3.2rem 4.2rem rgba(245, 240, 240, 0.1) ;;
+}
+
+.plan-premium{
+  border: 2px solid #fdf2e9;
+  box-shadow: 0 3.2rem 4.2rem rgba(245, 240, 240, 0.234) ;;
+}
+
+.plan-diamond{
+  margin-top: 1.5rem;
+  padding-top: 4rem;
+  margin-bottom: -1.5rem;
+  border: 2px solid #55E4E9;
+  box-shadow: 0 3.2rem 4.2rem rgba(50, 185, 238, 0.534);
+  color: #55E4E9;;
+}
+
+.diamond-icon{
+  color: #55E4E9;
+}
+
+.plan-sing-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-plan{
+  margin-top: 3.2rem;
+  color: #4a554b;
+  transition: all 0.5s;
+}
+
+.btn-plan-basic:active, .btn-plan-basic:hover{
+  background-color: #4a554b;
+}
+
+.btn-plan-diamond:active, .btn-plan-diamond:hover{
+  background-color: #55E4E9;
 }
