@@ -636,41 +636,65 @@
             <a href="#" class="btn btn--outline btn-plan btn-plan-basic">Let's start!</a>
           </div>
             </div>
-
       </div>
-
     </section>
 
 
 
 
-      <!-- <section>
-        <div class="contact" id="contact">
-          <div class="grid-3-cols">
+      <section class="section-contact container ">
+        <span class="subheading">Kontakt</span>
             <div class="reservation-container">
-              <h2>Rezerwacja online</h2>
+              <div class="text-contect-reservation">
+              <h3 class="heading-tertiary">Rezerwacja online</h3>
+              <p class="top-section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem architecto rerum consequatur ut quisquam, dicta ipsam iusto explicabo illo numquam asperiores laudantium enim. Cumque nostrum facilis, quis facere at repellendus.</p>
               <form class="reservation-form">
-                <input class="reservation-input" type="name" id="name" placeholder="Imię*">
-                <input class="reservation-input" type="phone" id="phone" placeholder="Telefon">
-                <textarea class="reservation-text-area" name="message" id="message" placeholder="Wiadomość"></textarea>
-                <button class="reservation-button">Wyślij</button>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input class="reservation-input" type="name" id="name" placeholder="John Xyz">
+                </div>
+                <div>
+                  <label for="full-name">E-mail</label>
+                  <input class="reservation-input" type="phone" id="phone" placeholder="+48 222 333 444">
+                </div>
+                <div>
+                  <label for="full-name">Message</label>
+                  <textarea class="reservation-text-area" name="message" id="message" placeholder="Wiadomość"></textarea>
+                </div>
+                <div>
+                  <select id="car-select" required>
+                    <option value="">Choose car:</option>
+                    <option value="car">Audi A4B9</option>
+                    <option value="car">Mercedes C63AMG</option>
+                    <option value="car">BMW SERIES 5</option>
+                    <option value="car">AUDI A6C8</option>
+                    <option value="car">MORCEDES GLE</option>
+                  </select>
+                </div>
+                <div>
+                  <a href="#" class="btn btn--outline btn-reservation">Send it!</a>
+                </div>
               </form>
-        </div>
+              </div>
 
-        <div class="contact-container">
-          <h2>Kontakt</h2>
-          <ul class="contact-list">
-            <li>
-              <span>Telefon: +48 111 222 333</span>
-            </li>
-            <li>
-              <span>Adres: Lublin ul.Szkolna 11</span>
-            </li>
-            <li>
-              <span>Mail: example@gmail.com</span>
-            </li>
-          </ul>
-        </div>
+              <div class="reservation-jpg" role="img" aria-label="Happy man"></div>
+            </div>
+
+        <div class="contact-box grid grid--2-cols">
+          <div class="contact-container">
+            <h2>Kontakt</h2>
+            <ul class="contact-list">
+              <li>
+                <span>Telefon: +48 111 222 333</span>
+              </li>
+              <li>
+                <span>Adres: Lublin ul.Szkolna 11</span>
+              </li>
+              <li>
+                <span>Mail: example@gmail.com</span>
+              </li>
+            </ul>
+          </div>
 
         <div class="open-container">
           <h2>Godziny otwarcia</h2>
@@ -683,10 +707,8 @@
             </li>
           </ul>
         </div>
-
       </div>
-    </div>
-    </section> -->
+    </section>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
