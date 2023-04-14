@@ -12,7 +12,7 @@
   <link href="/js/swiper-bundle.min.js">
 
 </head>
-<body>
+<hr>
 
 
   <div class="background-img">
@@ -662,6 +662,7 @@
                   <textarea class="reservation-text-area" name="message" id="message" placeholder="Wiadomość"></textarea>
                 </div>
                 <div>
+                  <label for="full-name">Select car</label>
                   <select id="car-select" required>
                     <option value="">Choose car:</option>
                     <option value="car">Audi A4B9</option>
@@ -680,35 +681,59 @@
               <div class="reservation-jpg" role="img" aria-label="Happy man"></div>
             </div>
 
-        <div class="contact-box grid grid--2-cols">
+        <div class="contact-box grid grid--3-cols">
           <div class="contact-container">
-            <h2>Kontakt</h2>
+            <h3 class="heading-tertiary tertiaryv2">Kontakt</h3>
             <ul class="contact-list">
-              <li>
+              <li class="contact-simple">
+                <ion-icon name="call-outline"></ion-icon>
                 <span>Telefon: +48 111 222 333</span>
               </li>
-              <li>
+              <li class="contact-simple">
+                <ion-icon name="home-outline"></ion-icon>
                 <span>Adres: Lublin ul.Szkolna 11</span>
               </li>
-              <li>
+              <li class="contact-simple">
+                <ion-icon name="mail-outline"></ion-icon>
                 <span>Mail: example@gmail.com</span>
               </li>
             </ul>
           </div>
 
+          <div class="media-container">
+            <h3 class="heading-tertiary tertiaryv2">Social media</h3>
+            <ul class="contact-list">
+              <li class="contact-simple">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <span>Facebook</span>
+              </li>
+              <li class="contact-simple">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span>Instagram</span>
+              </li>
+              <li class="contact-simple">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <span>Twitter</span>
+              </li>
+            </ul>
+          </div>
+
         <div class="open-container">
-          <h2>Godziny otwarcia</h2>
+          <h3 class="heading-tertiary">Godziny otwarcia</h3>
           <ul ul class="contact-list">
-            <li>
+            <li class="contact-simple">
+              <ion-icon name="time-outline"></ion-icon>
               <span>Pon-Pt: 9:00-18:00</span>
             </li>
-            <li>
+            <li class="contact-simple">
+              <ion-icon name="time-outline"></ion-icon>
               <span>Sobota: 9:00-15:00</span>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
